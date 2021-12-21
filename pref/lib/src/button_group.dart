@@ -109,6 +109,9 @@ class _PrefButtonGroupState<T> extends State<PrefButtonGroup<T>> {
         value: value,
         disabled: disabled,
         onChanged: _onChange,
+        borderRadius : widget.borderRadius,
+        borderWidth : widget.borderWidth,
+        borderColor: widget.borderColor,
       ),
     );
   }
