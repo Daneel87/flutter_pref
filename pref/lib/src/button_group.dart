@@ -25,6 +25,9 @@ class PrefButtonGroup<T> extends StatefulWidget {
   final Widget? title;
   final Widget? subtitle;
   final String pref;
+  final BorderRadius? borderRadius;
+  final double? borderWidth;
+  final Color? borderColor;
 
   final bool? disabled;
 
