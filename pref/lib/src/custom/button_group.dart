@@ -12,16 +12,25 @@ class ButtonGroup<T> extends StatelessWidget {
     required this.onChanged,
     this.disabled = false,
     required this.items,
+    this.borderRadius,
+    this.borderColor,
+    this.borderWidth
   }) : super(key: key);
 
   final ValueChanged<T>? onChanged;
   final bool disabled;
   final T? value;
   final List<ButtonGroupItem<T>> items;
-
+  final BorderRadius? borderRadius;
+  final double? borderWidth;
+  final Color? borderColor;
+  
   @override
   Widget build(BuildContext context) {
     return ToggleButtons(
+      borderRadius : borderRadius,
+      borderWidth : borderWidth,
+      borderColor: borderColor,
       isSelected: items.map((e) => e.value == value).toList(),
       onPressed: disabled
           ? null
