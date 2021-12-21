@@ -20,6 +20,9 @@ class PrefButtonGroup<T> extends StatefulWidget {
     this.subtitle,
     this.onChange,
     this.disabled,
+    this.borderRadius,
+    this.borderColor,
+    this.borderWidth
   }) : super(key: key);
 
   final Widget? title;
